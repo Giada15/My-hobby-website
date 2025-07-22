@@ -7,8 +7,8 @@ This is a responsive personal website showcasing my hobby, built using **HTML**,
 - Fully responsive design using Bootstrap
 - Clean and accessible layout
 - Organized project structure
-- Custom CSS for styling tweaks and CSS animations
-- Simple and beginner-friendly codebase
+- Custom CSS styling for a personalized look 
+- CSS animations
 
 ## 📁 Technologies Used
 
