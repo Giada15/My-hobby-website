@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container-xxl * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+.container-xxl {
+  border: 1px solid #2f4515;
+}
+
+/*-------------------------------NAV------------------------------*/
+
+nav li {
+  border: 1px solid rgba(193, 207, 205, 0.5);
+}
+
+li.custom-active-li:hover {
+  animation: background-change 4s ease-in-out;
+}
+
+@keyframes background-change {
+  20% {
+    background-color: #ad652b;
+  }
+
+  100% {
+    background-color: #2f4515;
+  }
+}
+
+a.custom-active {
+  color: #c1cfcd;
+  font-weight: 300;
+}
+
+a.custom-active:hover,
+a.custom-active:visited {
+  color: #c1cfcd;
+}
+
+a.disabled {
+  color: #949494 !important;
+  font-weight: 300;
+}
+
+/*-----------------TITLE WITH TEXT ANIMATION-----------------------*/
+
+/*--text slide animation--*/
+ul.custom-typing-text {
+  height: 108px;
+  overflow: hidden;
+}
+
+ul.custom-typing-text li {
+  list-style: none;
+  top: 0;
+  position: relative;
+
+  font-weight: 800;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+
+  margin: 0;
+
+  animation: slide 12s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -324px;
+  }
+}
+
+/*--text typing animation--*/
+ul.custom-typing-text li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #283815;
+  border-left: 2px solid #ad652b;
+  animation: text-type 4s steps(12) infinite;
+}
+
+@keyframes text-type {
+  60% {
+    left: calc(100% + 20px);
+  }
+}
+
+/*--text background color animation--*/
+ul.custom-typing-text span {
+  color: #c17130;
+  animation: color-change 4s linear infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #ad652b;
+  }
+  70% {
+    color: #ad652b;
+  }
+  100% {
+    color: #c1cfcd;
+  }
+}
+
+/*------------------------------HEADER------------------------------*/
+
+header {
+  background-color: #283815;
+  letter-spacing: 2px;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #c1cfcd;
+  height: 90vh;
+}
+
+div.custom-header {
+  padding: 4em 8em 5em 11em !important;
+}
+
+@media screen and (max-width: 992px) {
+  div.custom-header {
+    padding: 0 !important;
+  }
+
+  div.custom-header {
+    padding: 3em 5em 4em 5em !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    height: 100%;
+    padding: 4em !important;
+  }
+
+  div.custom-header {
+    padding: 0 !important;
+  }
+}
+
+/*---------------Hader info----------------*/
+
+/*--------TITLE-------*/
+
+.custom-link {
+  text-decoration: none;
+  font-weight: 300;
+  opacity: 0.75;
+  color: #c1cfcd;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.custom-p {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.custom-p span {
+  font-weight: 600;
+}
+
+.custom-description {
+  font-weight: 200;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.custom-name p {
+  font-weight: 300;
+  opacity: 0.75;
+}
+
+/*--------------Header photo---------------*/
+
+div.custom-header-photo {
+  height: 100%;
+}
+
+div.custom-header-photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  padding-left: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  div.custom-header-photo img {
+    padding: 4em 0;
+  }
+}
+
+/*------------------------------MAIN------------------------------*/
+main {
+  height: auto;
+  padding: 6em 9em !important;
+  background-color: #d4dedc;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    padding: 6em 3em !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    height: 100%;
+  }
+}
+
+/*----------------Main photo-----------------*/
+
+div.custom-main-photo {
+  height: auto;
+}
+
+div.custom-main-photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*----------------Main overview-------------*/
+
+main p {
+  font-size: 0.85rem;
+}
+
+/*-----------------------------FOOTER----------------------------*/
+
+footer {
+  background-color: #2f4515;
+  height: 200px;
+  color: #c1cfcd;
+}
